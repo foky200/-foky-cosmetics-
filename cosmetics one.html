@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wafaa's Cosmetics Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            display: inline-block;
+            width: 200px;
+            vertical-align: top;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #222;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: auto;
+        }
+        form label {
+            margin-bottom: 5px;
+        }
+        form input, form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Cosmetics Shop!</h1>
+    <nav>
+        <ul>
+            <li><a href="https://sites.google.com/view/foky--cosmetics/home">Products</a></li>
+            <li><a href="https://sites.google.com/view/amazon-dupe/home">Contact Us</a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <h3>Niacamide Serum</h3>
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSgvzyJ7ZIzEZBBIXK8tHzHEk6_pMQS6_x5xSs5JeFf8s2JfBNksOgaMjZZcFNSNMQGftGVtKlYD_ujcpiMnJtUzaveGO_YuKmwXYTetOVeWEO-Upxr24I2flugxhN79PgrSTKLz6SU&usqp=CAc" alt="Anua Niacamide Serum">
+            <p>Price: 60 SAR</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Oil Cleanser</h3>
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTLnevhTDZ2aknlArJjJV0_ScOZHvUO8qRJvuL8Iqe7buIexB1Y362GoIgbqVApysv3RlUFC6sf6JoAfs3WePh6CAh5jruiIi3WKD-y3pZBb3H0-FU-2QssmW9xAjdIpHUmz0RCfFSwqA&usqp=CAc" alt="Anua Oil Cleanser">
+            <p>Price: 50 SAR </p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Toner </h3>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQek3aGRqApNZr48ru-A7LkICbt2Fmk4aw4Z9-ZX9TKveJXMv0_UZxoI7mJuut30CtvNGs1vcUPcKVrfKM-ZKNuj-93Sfk03zs-Nl5Mrjb8yD9T088f3teubrtNN8TcKKJV7el4cw&usqp=CAc" alt="Anua Toner">
+            <p>Price: 30 SAR </p>
+            <button>Add to Cart</button>
+        </div>
+         <div class="product">
+            <h3>Face cleanser</h3>
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTbqk5CpPXAWAm6wX6CECUX3HQSCU-6AotwR8iygaPWqkwlpJ-7DvjRratjXKGm0Zy6TqGoXChDDBLCCaB2DfMxAC_NDxLsiO8Sj6KSVzdkB7Gc_YekToD3n1wn2BDVpD_mH1BYuNQ&usqp=CAc" alt="Anua heartleaf cleanser">
+            <p>Price: 40 SAR </p>
+            <button>Add to Cart</button>
+        </div>
+         <div class="product">
+            <h3>Face cleanser</h3>
+            <img src="data:image/jpeg;base64,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" alt="Anua heartleaf cleanser">
+            <p>Price: 40 SAR </p>
+            <button>Add to Cart</button>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Please enter a Name" >
+            place
+            
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Please enter Your Email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Cosmetics Shop. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
